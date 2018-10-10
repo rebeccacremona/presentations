@@ -1,0 +1,5 @@
+---
+layout: slideshow
+---
+{% assign slides = site.slides | where: "slug", "lita-2018" | first %}
+{{ slides.content }}

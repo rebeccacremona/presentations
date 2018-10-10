@@ -1,0 +1,25 @@
+title: Your awesome title
+description: >-
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/presentations"
+url: "https://rebeccacremona.github.io"
+permalink: pretty
+
+markdown: kramdown
+exclude:
+  - README.md
+
+collections:
+  slides:
+    output: true
+
+
+defaults:
+  - scope:
+      path: ''
+      type: slides
+    values:
+      layout: markdownify
+      permalink: /:collection/:name.html
