@@ -1,8 +1,6 @@
-title: Your awesome title
+title: Presentations | Rebecca Lynn Cremona
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Presentations by Rebecca Lynn Cremona
 baseurl: "/presentations"
 url: "https://rebeccacremona.github.io"
 permalink: pretty
@@ -10,16 +8,5 @@ permalink: pretty
 markdown: kramdown
 exclude:
   - README.md
-
-collections:
-  slides:
-    output: true
-
-
-defaults:
-  - scope:
-      path: ''
-      type: slides
-    values:
-      layout: markdownify
-      permalink: /:collection/:name.html
+  - Gemfile
+  - Gemfile.lock
