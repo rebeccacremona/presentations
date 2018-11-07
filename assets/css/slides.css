@@ -125,18 +125,6 @@ p {
 /* Slides, in both formats
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-section a {
-  color: #FEC700;
-}
-
-section a:visited {
-  color: #6efe00;
-}
-
-section a:hover, a:focus {
-  color: #fe006e;
-}
-
 .slides {
   max-width: calc(90vh * 4 / 3);
   margin: auto;
@@ -166,9 +154,48 @@ section.center > *:last-child {
   margin-bottom: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5em !important;
+  padding-left: 1em !important;
+  position: relative;
+}
+
+li:after {
+  content: '';
+  height: .25em;
+  width: .25em;
+  background: white;
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  top: .7em;
+  left: 0;
+}
+
+
 
 /* All slides on a single page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+section a {
+  color: #FEC700;
+}
+
+section a:visited {
+  color: #6efe00;
+}
+
+section a:hover, section a:focus {
+  color: #fe006e;
+}
 
 .non-reveal section {
   position: relative;
@@ -235,3 +262,6 @@ html.reveal, .reveal body, .reveal main {
   text-align: left !important;
 }
 
+section a, section a:visited, section a:hover, section a:focus{
+  color: white;
+}

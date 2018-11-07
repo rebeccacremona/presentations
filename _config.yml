@@ -6,6 +6,8 @@ url: "https://rebeccacremona.github.io"
 permalink: pretty
 
 markdown: kramdown
+kramdown:
+  parse_block_html: true
 exclude:
   - README.md
   - Gemfile
