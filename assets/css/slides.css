@@ -214,7 +214,6 @@ section a:hover, section a:focus {
 
 .non-reveal section:first-of-type {
   margin-top: 0px;
-  min-height: 100vh;
 }
 
 .non-reveal section::after {
