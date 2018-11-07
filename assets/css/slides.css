@@ -92,7 +92,11 @@ h2, .h2 {
 }
 
 .pull-up {
-  margin-top: -1.0rem;
+  margin-top: -1.0rem !important;
+}
+
+.pull-down {
+  margin-bottom: 0.5rem !important;
 }
 
 h1, .h1 , .reveal h1, .reveal .h1 { font-size: 3.7rem; line-height: 1;  letter-spacing: -.2rem;}
@@ -160,6 +164,7 @@ img {
 
 ul {
   list-style: none;
+  text-align: left;
 }
 
 li {
