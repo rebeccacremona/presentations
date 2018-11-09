@@ -168,9 +168,13 @@ ul {
 }
 
 li {
-  margin-bottom: 0.5em !important;
+  margin-bottom: 0.2em !important;
   padding-left: 1em !important;
   position: relative;
+}
+
+li li {
+  margin-bottom: 0 !important;
 }
 
 li:after {
@@ -268,4 +272,8 @@ html.reveal, .reveal body, .reveal main {
 
 section a, section a:visited, section a:hover, section a:focus{
   color: white;
+}
+
+.reveal p {
+  margin-bottom: 1em;
 }
