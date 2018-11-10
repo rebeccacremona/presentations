@@ -240,6 +240,12 @@ section a:hover, section a:focus {
   display:flex;
   -webkit-align-items:center;
   align-items:center;
+  flex-direction: column;
+}
+
+.non-reveal section.center {
+  display: -webkit-flex;
+  display:flex;
   -webkit-justify-content: center;
   justify-content:center;
   flex-direction: column;
@@ -270,7 +276,7 @@ html.reveal, .reveal body, .reveal main {
   text-align: left !important;
 }
 
-section a, section a:visited, section a:hover, section a:focus{
+.reveal section a, .reveal section a:visited, .reveal section a:hover, .reveal section a:focus{
   color: white;
 }
 
