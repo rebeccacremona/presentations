@@ -86,17 +86,11 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .reveal h2, .reveal .h2,
-h2, .h2 {
+.reveal h3, .reveal .h3,
+h2, .h2,
+h3, .h3 {
   margin-top: 0;
-  margin-bottom: 2.0rem;
-}
-
-.pull-up {
-  margin-top: -1.0rem !important;
-}
-
-.pull-down {
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem
 }
 
 h1, .h1 , .reveal h1, .reveal .h1 { font-size: 3.7rem; line-height: 1;  letter-spacing: -.2rem;}
@@ -115,16 +109,23 @@ p {
   margin-top: 0;
 }
 
-@media(min-width:768px) {
-  ul {
-    list-style-position: inside;
-  }
+a {
+  color: #FEC700;
+}
+
+a:visited {
+  color: #6efe00;
+}
+
+a:hover, a:focus {
+  color: #fe006e;
 }
 
 .yellow, em, strong {
   color: #FEC700;
   font-weight: normal;
 }
+
 
 /* Slides, in both formats
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -165,6 +166,14 @@ img {
 ul {
   list-style: none;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 0.5rem !important;
+}
+
+@media(min-width:768px) {
+  ul {
+    list-style-position: inside;
+  }
 }
 
 li {
@@ -173,38 +182,29 @@ li {
   position: relative;
 }
 
+li ul, li ol {
+  margin-bottom: 0 !important;
+}
+
 li li {
   margin-bottom: 0 !important;
+  font-size: 0.9rem !important;
 }
 
 li:after {
   content: '';
-  height: .25em;
-  width: .25em;
+  height: 0.25em;
+  width: 0.25em;
   background: white;
   display: block;
   position: absolute;
   transform: rotate(45deg);
-  top: .7em;
+  top: 0.7em;
   left: 0;
 }
 
-
-
 /* All slides on a single page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-section a {
-  color: #FEC700;
-}
-
-section a:visited {
-  color: #6efe00;
-}
-
-section a:hover, section a:focus {
-  color: #fe006e;
-}
 
 .non-reveal section {
   position: relative;
