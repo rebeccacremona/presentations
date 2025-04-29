@@ -1,23 +1,27 @@
+---
+---
+
+
 /* Fonts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @font-face {
   font-family: 'High Tower Text';
-  src: url('assets/fonts/HTOWERT.eot');
+  src: url('{{site.base.url}}/assets/fonts/HTOWERT.eot');
   src: local('High Tower Text'),
-       url('assets/fonts/HTOWERT.woff') format('woff'),
-       url('assets/fonts/HTOWERT.ttf') format('truetype'),
-       url('assets/fonts/HTOWERT.svg') format('svg');
+       url('{{site.base.url}}/assets/fonts/HTOWERT.woff') format('woff'),
+       url('{{site.base.url}}/assets/fonts/HTOWERT.ttf') format('truetype'),
+       url('{{site.base.url}}/assets/fonts/HTOWERT.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Goudy Bookletter 1911';
-  src: url('assets/fonts/goudy_bookletter_1911.eot');
+  src: url('{{site.base.url}}/assets/fonts/goudy_bookletter_1911.eot');
   src: local('Goudy Bookletter 1911'),
-       url('assets/fonts/goudy_bookletter_1911.woff') format('woff'),
-       url('assets/fonts/goudy_bookletter_1911.ttf') format('truetype'),
-       url('assets/fonts/goudy_bookletter_1911.svg') format('svg');
+       url('{{site.base.url}}/assets/fonts/goudy_bookletter_1911.woff') format('woff'),
+       url('{{site.base.url}}/assets/fonts/goudy_bookletter_1911.ttf') format('truetype'),
+       url('{{site.base.url}}/assets/fonts/goudy_bookletter_1911.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -111,11 +115,12 @@ p {
 
 a {
   color: #FEC700;
+  font-size: 0.8em;
 }
 
-a:visited {
+/*a:visited {
   color: #6efe00;
-}
+}*/
 
 a:hover, a:focus {
   color: #fe006e;
